@@ -1,0 +1,11 @@
+currency_from,currency_to,rate,command
+USD,EUR,,USD to EUR
+EUR,GBP,,EUR to GBP
+GBP,JPY,,GBP to JPY
+JPY,CAD,,JPY to CAD
+CAD,AUD,,CAD to AUD
+AUD,NZD,,AUD to NZD
+NZD,CHF,,NZD to CHF
+CHF,CNY,,CHF to CNY
+CNY,INR,,CNY to INR
+INR,BRL,,INR to BRL
