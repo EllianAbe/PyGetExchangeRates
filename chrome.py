@@ -14,8 +14,8 @@ try:
 
     for index, row in df.iterrows():
         driver.get(f"https://www.google.com/search?q={row['command']}")
-        element = driver.find_elements(
-            by=By.XPATH, value='//input[@aria-label="Campo do montante da moeda"]')[1]
+        element = driver.find_element(
+            by=By.XPATH, value='(//input[@aria-label="Campo do montante da moeda"])[2]')
 
         text = element.get_attribute('value')
         df.at[index, 'rate'] = float(text)
