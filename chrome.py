@@ -1,4 +1,3 @@
-from selenium.webdriver import ChromeOptions
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 import pandas as pd
@@ -19,8 +18,6 @@ try:
 
         text = element.get_attribute('value')
         df.at[index, 'rate'] = float(text)
-
-        driver.implicitly_wait(3)
 except Exception as e:
     raise e
 finally:
